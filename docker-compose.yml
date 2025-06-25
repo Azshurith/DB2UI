@@ -55,7 +55,7 @@ services:
 
   pgadmin:
     container_name: ${PROJECT_NAME}-pgadmin
-    image: ${PROJECT_NAME}-postgres:${PROJECT_NAME}-${PROJECT_VERSION}
+    image: ${PROJECT_NAME}-pgadmin:${PROJECT_NAME}-${PROJECT_VERSION}
     build:
       context: .
       dockerfile: ${PGADMIN_DOCKERFILE}/Dockerfile

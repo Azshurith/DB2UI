@@ -133,6 +133,3 @@ GitHub: [@Azshurith](https://github.com/Azshurith)
 ## 📄 License
 
 [MIT](./LICENSE)
-
-
-New-Item -ItemType SymbolicLink -Path "D:\Documents\Projects" -Target "\\wsl.localhost\Ubuntu-24.04\home\devitrax\Projects"
