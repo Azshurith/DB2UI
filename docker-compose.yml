@@ -7,10 +7,13 @@ services:
       dockerfile: ${NUXT_DOCKERFILE}/Dockerfile
     ports:
       - "${NUXT_PORT}:${NUXT_PORT}"
+    environment:
+      NUXT_PORT: ${NUXT_PORT}
+      EXPRESS_PORT: ${EXPRESS_PORT}
     volumes:
       - ${NUXT_DIRECTORY}:${NUXT_WORK_DIRECTORY}
     working_dir: ${NUXT_WORK_DIRECTORY}
-    command: sh -c "npm install && npm run build"
+    command: sh -c "npm install && npm run dev"
     depends_on:
       - express
 

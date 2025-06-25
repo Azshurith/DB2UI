@@ -11,11 +11,13 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-const posts = ref([])
+import { ref, onMounted } from 'vue';
+import { useRuntimeConfig } from '../node_modules/nuxt/dist/app';
+const posts = ref([]);
+const config = useRuntimeConfig();
 
 onMounted(async () => {
-  const res = await fetch('http://localhost:4000/api/posts')
+  const res = await fetch(`http://localhost:${config.public.express}/api/posts`)
   posts.value = await res.json()
 })
 </script>

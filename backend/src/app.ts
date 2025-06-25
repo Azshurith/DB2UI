@@ -14,5 +14,5 @@ app.use('/api', routes);
 const PORT = process.env.EXPRESS_PORT || 4000;
 
 app.listen(PORT, () => {
-  console.log(`Server running on port5 ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
