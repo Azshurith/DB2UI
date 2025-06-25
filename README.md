@@ -91,7 +91,34 @@ frontend/                # NuxtJS frontend (src/pages, src/components, etc.)
 .docker/                 # Dockerfiles for each service
 .env                     # Environment variables
 docker-compose.yml       # Multi-container orchestrator
+Makefile                 # Project CLI with helper commands
 ```
+
+---
+
+## 🛠️ Makefile CLI Commands
+
+Use `make help` to list all available commands:
+
+| Command            | Description                                  |
+|--------------------|----------------------------------------------|
+| `project_start`    | 🚀 Start all containers in detached mode     |
+| `project_stop`     | 🛑 Stop all running containers               |
+| `project_restart`  | 🔄 Restart all containers                    |
+| `project_destroy`  | 💣 Remove containers and volumes             |
+| `express_shell`    | 🔧 Open a shell in Express container         |
+| `express_install`  | 📦 Install backend dependencies              |
+| `express_update`   | 🔄 Update backend packages                   |
+| `express_dev`      | 🛠️ Run Express in dev mode                  |
+| `express_start`    | ▶️ Run Express in production mode            |
+| `express_build`    | 🔧 Build backend (if applicable)             |
+| `nuxt_shell`       | 🔧 Open a shell in Nuxt container            |
+| `nuxt_install`     | 📦 Install frontend dependencies             |
+| `nuxt_update`      | 🔄 Update frontend packages                  |
+| `nuxt_dev`         | 🛠️ Run Nuxt in dev mode                     |
+| `nuxt_start`       | ▶️ Run Nuxt in production mode              |
+| `nuxt_build`       | 🔧 Build frontend for production             |
+| `help`             | 📖 Show this help menu                       |
 
 ---
 
