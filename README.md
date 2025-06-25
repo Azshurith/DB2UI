@@ -1,8 +1,8 @@
-# 🚀 Auto-Dashboard
+# 🚀 DB2UI
 
 > Full-stack automation dashboard built with modern technologies — designed for scale, speed, and modularity.
 
-Auto-Dashboard is a robust automation platform powered by **Node.js**, **Express**, **NuxtJS**, and **PostgreSQL**. It comes Docker-ready with **pgAdmin** for database control and **Redis** support for caching, queuing, or session management.
+DB2UI is a robust automation platform powered by **Node.js**, **Express**, **NuxtJS**, and **PostgreSQL**. It comes Docker-ready with **pgAdmin** for database control and **Redis** support for caching, queuing, or session management.
 
 ---
 
@@ -35,8 +35,8 @@ Auto-Dashboard is a robust automation platform powered by **Node.js**, **Express
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Azshurith/Auto-Dashboard.git
-cd Auto-Dashboard
+git clone https://github.com/Azshurith/DB2UI.git
+cd DB2UI
 ```
 
 ### 2. Create `.env` File
@@ -50,7 +50,7 @@ cp .env.example .env
 ### 3. Start with Docker
 
 ```bash
-docker-compose up --d
+docker-compose up -d
 ```
 
 Access:
