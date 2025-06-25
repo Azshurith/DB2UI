@@ -54,9 +54,9 @@ docker-compose up --build
 ```
 
 Access:
-- Frontend: `http://localhost:3000`
-- Backend: `http://localhost:4000/api`
-- pgAdmin: `http://localhost:5050`
+- Frontend: `http://localhost:4000`
+- Backend: `http://localhost:4001/api`
+- pgAdmin: `http://localhost:4002`
 - Redis: `localhost:6379`
 
 ---
